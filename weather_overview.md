@@ -40,34 +40,6 @@ You can use the REST APIs to retrieve the following information:
 * The current observed weather data for a specified geolocation. This weather data includes temperature, precipitation, wind direction and speed, humidity, barometric pressure, dew point, visibility, and ultraviolet (UV) radiation.
 * The observed weather data for a specified geolocation and a specified time range. This data is sourced from physical observation stations. This API returns weather observations for current conditions and past observations up to and including the previous 24 hours.
 
-For more information about The Weather Company's weather phrases and icons, see [Icon Code, Phrases and Images](https://docs.google.com/document/d/1MZwWYqki8Ee-V7c7InBuA5CDVkjb3XJgpc39hI9FsI0/edit?pli=1){:new_window}.
-You can also [download a set of icons](https://twcdocs.mybluemix.net/download/weatherinsightsicons.zip){:new_window} to use in your app.
-
-## Pricing model
-{: #pricing_models}
-
-The pricing model is based on daily calls to the Insights for Weather APIs that
-are charged to the client monthly. You can test the weather data in your applications
-for any geographic area, forecast type, or time series observations with only a
-restriction on number of calls. The Free, Base, and Premium plans can be purchased
-without a contract. These plans allow your app to make 500, 5,000, or 50,000 API calls per day respectively.
-
-Multiple Premium plans can also be purchased for each service instance that is
-deployed during the billing period. If your app uses more than 50,000 calls per
-day or over 1,000 calls per minute, you need a contract with IBM for ongoing provision of services.
-
-When your app reaches the limit of API calls that it is allowed to make based on
-the plan that you selected, the next API call that is made will not succeed
-until your app is allowed to request more API calls.
-
-For example, if you are using the Base plan, your app can make 500 API calls in a
-minute even though it exceeds the limit of the plan, but the next API call won't
-be allowed until 5 minutes later. Therefore, a user might notice a delay in the
-refresh of weather data in your app. You must ensure that you develop your app
-to handle these limits and not request bursts of API calls. Instead, you can
-monitor the API call usage of your app. You can verify whether your app reaches the
-limit of its plan by checking the number of items that are returned by the API call.
-
 ## Feedback and support
 {: #feedback_support}
 
